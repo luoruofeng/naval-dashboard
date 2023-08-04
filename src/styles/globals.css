@@ -1,0 +1,36 @@
+body {
+  background-color: #ffffff; /* 背景色设置为白色 */
+  font-family: Arial, sans-serif; /* 使用 Arial 字体 */
+}
+
+/* 添加其他全局样式 */
+/* 导航栏样式 */
+.navbar {
+  background-color: #4267b2; /* 蓝色背景色 */
+  color: #ffffff; /* 文本颜色为白色 */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #dfe3e8; /* 鼠标悬停时的颜色 */
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background-color: #4267b2; /* 蓝色背景色 */
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #3b5998; /* 鼠标悬停时的颜色 */
+}

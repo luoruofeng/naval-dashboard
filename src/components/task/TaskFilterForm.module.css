@@ -1,0 +1,53 @@
+/* components/task/TaskFilterForm.module.css */
+
+.task-filter-form {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.task-filter-form h3 {
+  font-size: 12px; /* Increase font size for better visibility */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.task-filter-form .form-group {
+  margin-bottom: 15px;
+}
+
+.task-filter-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 10px; /* Increase font size for better visibility */
+  color: #1877f2; /* Facebook蓝色 */
+}
+
+.task-filter-form select,
+.task-filter-form input {
+  width: 100%;
+  padding: 10px; /* Increase padding for better spacing */
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.task-filter-form select:focus,
+.task-filter-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.task-filter-form .form-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Place the label and input/select on the same line */
+.task-filter-form .form-group {
+  flex: 1; /* Allow the form group to take the available space */
+}

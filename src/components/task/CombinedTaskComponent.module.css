@@ -1,0 +1,8 @@
+/* 在组件的CSS文件或style标签中添加样式 */
+.combined-task-component {
+    position: absolute;
+    top: 0;
+    width: 100%; /* 假设你想让组件宽度铺满整个页面 */
+    z-index: 9999; /* 可选：如果需要确保组件在其他元素之上显示 */
+  }
+  

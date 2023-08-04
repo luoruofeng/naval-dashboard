@@ -1,0 +1,35 @@
+/* BootstrapModal.module.css */
+
+/* Facebook-style button */
+.modal-button {
+  font-size: 10px;
+  background-color: #1877f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Close button */
+.modal-close {
+  font-size: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Modal styles */
+.modal-dialog {
+  max-width: 1800px; /* Optional: To limit the maximum width */
+}
+
+/* Modal content styles */
+.modal-content {
+  font-size: 10px;
+}
+

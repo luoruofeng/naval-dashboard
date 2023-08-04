@@ -1,0 +1,54 @@
+/* components/task/TaskTable.module.css */
+
+.task-table {
+  margin-top: 20px;
+}
+
+.task-table h3 {
+  font-size: 12px; /* Increase font size for better visibility */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.task-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+  padding: 8px; /* Increase padding for better spacing */
+  border: 1px solid transparent; /* Set border to transparent to hide the lines */
+  font-size: 10px; /* Reset font size to 10px */
+}
+
+.task-table th {
+  background-color: #1877f2; /* Facebook蓝色 */
+  color: #fff; /* White text color */
+  font-weight: bold;
+  text-align: left;
+}
+
+.task-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tbody tr:hover {
+  background-color: #e6f0ff; /* Facebook淡蓝色 */
+}
+
+/* Arrange buttons horizontally */
+.task-table button {
+  color: #fff;
+  background-color: #1877f2; /* Facebook蓝色 */
+  border: none;
+  padding: 8px 12px; /* Increase padding for better button size */
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px; /* Add right margin for spacing between buttons */
+  display: inline-block; /* Display buttons in a row */
+}
+
+.task-table button:last-child {
+  margin-right: 0; /* Remove right margin for the last button */
+}
