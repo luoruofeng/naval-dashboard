@@ -26,7 +26,7 @@ const Navbar = ({ selectedItem, onItemClick }) => {
             <a
               className="nav-link"
               href="#"
-              onClick={() => onItemClick('任务')}
+              onClick={() => onItemClick('task')}
             >
               任务
             </a>
@@ -37,7 +37,7 @@ const Navbar = ({ selectedItem, onItemClick }) => {
             <a
               className="nav-link"
               href="#"
-              onClick={() => onItemClick('日志')}
+              onClick={() => onItemClick('log')}
             >
               日志
             </a>
@@ -48,9 +48,21 @@ const Navbar = ({ selectedItem, onItemClick }) => {
             <a
               className="nav-link"
               href="#"
-              onClick={() => onItemClick('监控')}
+              onClick={() => onItemClick('monitoring')}
             >
               监控
+            </a>
+          </li>
+
+          <li
+            className={`nav-item ${selectedItem === 'K8S' ? 'active' : ''}`}
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => onItemClick('K8S')}
+            >
+              K8S
             </a>
           </li>
         </ul>
