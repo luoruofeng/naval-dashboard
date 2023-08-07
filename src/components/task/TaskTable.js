@@ -5,7 +5,6 @@ import TaskTimeCell from './TaskTimeCell';
 import ModalButton from './ModalButton';
 
 const TaskTable = ({ tasks, deleteById, execById }) => {
-
   return (
     <div className={styles['task-table']}>
       <h3 className={styles['table-heading']}>Task Table</h3>
@@ -59,6 +58,16 @@ const TaskTable = ({ tasks, deleteById, execById }) => {
                   modalTitle={task.Id}
                   modalText={JSON.stringify(task)}
                 />
+
+              {task.ExecResultIds && task.ExecResultIds.length > 1 && (
+                <ModalButton
+                  buttonText="Result"
+                  modalTitle={task.Id}
+                  url={`/taskresult/${task.Id}`}
+                />
+              )}
+
+
                 {task.StateCode === 2 && (
                 <button className={styles['btn-primary']} onClick={() => execById(task.Id)}>Execute</button>
                 )}
